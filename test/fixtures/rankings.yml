@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  users: one
+  games: one
+  ranking: 1
+
+two:
+  users: two
+  games: two
+  ranking: 1

@@ -1,0 +1,35 @@
+<%= javascript_include_tag "games/memokey" %>
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		<div align="center">
+			<h1>Memo Key</h1><br>
+		</div>
+		<br>
+		<div>
+			<h1 id="letras" align="center"></h1>
+		</div>
+		<div >
+			<p>Te quedan: </p>
+			<p><span id="segundos">60 </span> seg</p>	
+		</div>
+		
+		<div>
+			<input type="text" name="letraUsuario" id="letraUsuario" value="" autofocus>
+			<input type="button" class="btn btn-info btn-sm" name="botonCapturaLetraUsuario" id="botonCapturaLetraUsuario" value="ok">
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<p id="comentarios" hidden>Te has equivocado, intentalo de nuevo!!!!</p>
+			<p id="puntos"></p>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="row">
+	<div class= "col-sm-4 col-sm-offset-4" id="boton_cerrar">
+		<a align="center" href="/games" id="cerrar" type="button" class="btn btn-danger btn-sm">Cerrar</a>
+	</div>
+	
+</div>

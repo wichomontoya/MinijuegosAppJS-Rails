@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MiniJuesgosApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="container-fluid">
+    <div class="jumbotron">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-center">
+            <a class="navbar-brand"><img src="http://vignette4.wikia.nocookie.net/plants-vs-zombies/images/0/09/Minijuegos.png/revision/latest?cb=20140712173953&path-prefix=es" class="img-responsive" alt="" align="center"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar" >
+              <ul class="nav navbar-nav navbar-right">
+              <li><a class="navbar-brand glyphicon glyphicon-home" href="/games"></a></li>
+              <li><a href="/users/sign_out" type="button" class="btn btn-md"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid text-center" id="fondo">    
+      <div class="row content">
+        <div class="col-sm-8 col-sm-offset-2 text-left"> 
+          <div class="container-fluid">
+            <div class="row" id="cuerpo">
+              <p class="notice"><%= notice %></p>
+              <p class="alert"><%= alert %></p>
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  </body>
+</html>

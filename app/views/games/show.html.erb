@@ -1,0 +1,43 @@
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		<h1 align="center"><%=@game.name%></h1>
+		<br>
+		<img src="<%=@game.image%>" class="img-responsive" alt="" width="600px">
+		<br>
+		<br>
+		<p>En este juego deberar recurrir a tu memoria en cada momento, ya que cada letra que va apareciendo debes digitarla junto a las anteriores y en el orden en que han aparecido, si lo logras sumaras mas y mas puntos, pero si fallas iras perdiendo los puntos obtenidos.</p>
+		<br>
+		<p>Solo recuerda, tienes un minuto para hacer la mayor cantidad de puntos posibles.</p>
+		<br>
+		<p>Diviertete.</p>
+		<br>
+		<br>
+		
+
+		<p align="center"><a href="/games/<%=@game.id%>/play" class="btn btn-success" >Jugar</a></p>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<table class="table">
+				<th class="col-sm-6 ">Usuario</th>
+				<th class="col-sm-6 ">Score</th>
+				<%@games.each do |game|%>
+					<tr class="col-sm-6">
+						
+					</tr>
+				<%end%>
+			</table>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+</div>
+
+
+
+
+
+

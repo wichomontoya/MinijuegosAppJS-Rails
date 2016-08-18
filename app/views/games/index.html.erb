@@ -1,0 +1,18 @@
+
+<h1 align="center">Juegos Disponibles</h1><br>
+<div class="container-fluid">
+	<div class="row">
+		<%@games.each do |game|%>
+		  <div class="col-sm-4 col-md-4 col-lg-4">
+		    <div class="thumbnail">
+		      <img src="<%=game.image%>" id="thumbnail_image" alt="...">
+		      <div class="caption">
+		        <h3 align="center"><%= game.name %></h3>
+		        <p><%= game.description %></p>
+		        <p align="center"><a href="/games/<%=game.id%>" class="btn btn-success" role="button">Ver</a> 
+		      </div>
+		    </div>
+		  </div>
+		<%end%>
+	</div>
+</div>
